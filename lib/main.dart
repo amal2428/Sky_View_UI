@@ -20,3 +20,6 @@ class MyApp extends StatelessWidget {
     );
   }
 }
+
+
+///////---------This is only UI of the Weather App--------------/////

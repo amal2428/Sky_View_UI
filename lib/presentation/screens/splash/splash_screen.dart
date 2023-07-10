@@ -2,8 +2,6 @@ import 'package:flutter/material.dart';
 import 'package:sky_view_weather_app/core/constants/constants.dart';
 import 'package:sky_view_weather_app/presentation/screens/main_page/main_screen.dart';
 
-import '../home/home_screen.dart';
-
 class SplashScreen extends StatelessWidget {
   const SplashScreen({super.key});
 

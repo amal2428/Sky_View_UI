@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_bloc/flutter_bloc.dart';
 import '../../widgets/custom_text.dart';
 import '../../widgets/date_functions.dart';
 
@@ -19,14 +18,12 @@ class HomeScreen extends StatelessWidget {
           children: [
             const SizedBox(height: 80),
             InkWell(
-              child: Text(
+              child: const Text(
                 "Name",
-                style: const TextStyle(color: Colors.white, fontSize: 35),
+                style: TextStyle(color: Colors.white, fontSize: 35),
               ),
               onTap: () {
-                // setState(() {
                 searchVisibility = true;
-                // });
               },
             ),
             const SizedBox(height: 20),
@@ -42,9 +39,7 @@ class HomeScreen extends StatelessWidget {
                     mainAxisSize: MainAxisSize.min,
                     children: [
                       IconButton(
-                          onPressed: () {
-                            // findGeoLoc(searchTextController.text);
-                          },
+                          onPressed: () {},
                           icon: const Icon(
                             Icons.search,
                             color: Colors.white,
@@ -52,10 +47,7 @@ class HomeScreen extends StatelessWidget {
                       IconButton(
                           onPressed: () {
                             searchTextController.clear();
-                            // setState(() {
                             searchVisibility = false;
-                            // }
-                            // );
                           },
                           icon: const Icon(
                             Icons.clear,
@@ -75,11 +67,6 @@ class HomeScreen extends StatelessWidget {
               children: [
                 Text(
                   "Temp",
-
-                  // widget.weatherObj?.main?.temp?.toStringAsFixed(0) == null
-                  //     ? '--'
-                  //     : widget.weatherObj!.main!.temp!.toStringAsFixed(0),
-
                   style: TextStyle(color: Colors.white, fontSize: 70),
                 ),
                 SizedBox(width: 10),
@@ -93,9 +80,6 @@ class HomeScreen extends StatelessWidget {
                     SizedBox(height: 10),
                     Text(
                       "Weather",
-                      // widget.weatherObj?.weather?[0].description == null
-                      //     ? ''
-                      //     : '${widget.weatherObj!.weather?[0].description}',
                       style: TextStyle(fontSize: 18, color: Colors.white),
                     ),
                   ],
